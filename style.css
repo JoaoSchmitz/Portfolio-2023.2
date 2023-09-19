@@ -16,7 +16,7 @@ h2 {
   --main-color: #00d9ff;
   --text-color: #748896;
   --text-color2: #d1d1d1;
-  --bg-color: #525050;
+  --bg-color: #666464;
   --bg-color2: teal;
   --big-font: 5rem;
   --big-font2: 3rem;
@@ -157,7 +157,7 @@ section {
   list-style: circle;
   list-style-position: inside;
   padding-left: 3vw;
-  text-align: justify;
+  text-align: center;
 }
 
 .about-content {
@@ -209,27 +209,30 @@ section {
 
 .projects-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 80%;
-  margin-left: 10%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .project-item {
   background: var(--bg-color2);
+  width: 40vw;
   padding: 25px;
-  border-radius: 20px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
   margin: 20px 0;
   box-shadow: 0px 0px 8px 0px rgb(255, 255, 255);
+
+  text-align: center;
+  width: 21vw;
+  border-radius: .5rem;
+  display: flex;
+  flex-flow: column;
 }
 
 .project-title {
-  font-size: var(--big-font2);
+  font-size: 2rem;
   margin-top: 3vh;
 }
 
@@ -239,22 +242,22 @@ section {
 
 .project-desc-item {
   font-size: 1.1rem;
-  margin: 0px 5vw;
   list-style: circle;
-  text-align: justify;
+  text-align: center;
 }
 
 .project-tecs {
-  list-style: none;
+  list-style: disc;
   display: flex;
   flex-flow: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
-  width: 60%;
+  width: 80%;
   margin-top: 4vh;
   margin-bottom: 3vh;
   padding: 0;
+  gap: 2rem;
 
   font-size: 1.5rem;
   font-weight: 500;
